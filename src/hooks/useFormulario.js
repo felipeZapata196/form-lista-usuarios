@@ -1,7 +1,7 @@
 import { useState } from "react"
 const useFormulario = (inicial) => {
 
-const [formulario, setFormulario] = useState(inicial)
+ const [formulario, setFormulario] = useState(inicial)
   const handleChange = (e)=> {
     setFormulario({
       ...formulario,
@@ -12,6 +12,6 @@ const [formulario, setFormulario] = useState(inicial)
   const reset = ()=> {
     setFormulario(inicial)
   }
-return [formulario, handleChange, reset]
+  return [formulario, handleChange, reset]
 }
 export default useFormulario;
