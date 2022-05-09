@@ -20,6 +20,7 @@ function App() {
       ...usuarios,
       formulario
     ])
+    console.log(usuarios)
     reset()
   }
   return (
